@@ -2195,15 +2195,15 @@ var links = [
             // },
             {
                 label: "Github",
-                href: "https://github.com/goosedefi/",
+                href: "https://github.com/Tea-Swap",
             },
-            {
-                label: "Docs",
-                href: "https://goosedefi.gitbook.io/goose-finance/",
-            },
+            // {
+            //   label: "Docs",
+            //   href: "https://goosedefi.gitbook.io/goose-finance/",
+            // },
             {
                 label: "Blog",
-                href: "https://goosefinance.medium.com/",
+                href: "https://tea-swap.finance/",
             },
         ],
     },
@@ -2215,67 +2215,22 @@ var socials = [
         items: [
             {
                 label: "English",
-                href: "https://t.me/goosedefi",
+                href: "https://t.me/TeaswapFinance",
             },
             // {
-            //   label: "Bahasa Indonesia",
-            //   href: "https://t.me/PancakeSwapIndonesia",
+            //   label: "Français",
+            //   href: "https://t.me/goosefinancefrench",
             // },
-            {
-                label: "中文",
-                href: "https://t.me/goosefinancechinese",
-            },
-            // {
-            //   label: "Tiếng Việt",
-            //   href: "https://t.me/PancakeSwapVN",
-            // },
-            {
-                label: "Italiano",
-                href: "https://t.me/goosefinanceitalian",
-            },
-            {
-                label: "русский",
-                href: "https://t.me/goosefinancerussian",
-            },
-            {
-                label: "Türkiye",
-                href: "https://t.me/GooseFinanceTurkey",
-            },
-            // {
-            //   label: "Português",
-            //   href: "https://t.me/PancakeSwapPortuguese",
-            // },
-            {
-                label: "Español",
-                href: "https://t.me/goosefinancespanish",
-            },
-            {
-                label: "日本語",
-                href: "https://t.me/goosefinancejapanese",
-            },
-            {
-                label: "Français",
-                href: "https://t.me/goosefinancefrench",
-            },
             {
                 label: "Announcements",
-                href: "https://t.me/goosefinanceann",
-            },
-            {
-                label: "Price Bot",
-                href: "https://t.me/BinanceRocketEGG",
+                href: "https://t.me/joinchat/qx4uCbmNDfgwZmVk",
             },
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/goosedefi",
-    },
-    {
-        label: "Reddit",
-        icon: "RedditIcon",
-        href: "https://www.reddit.com/r/GooseFinanceofficial",
+        href: "https://twitter.com/SwapTea",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -2862,7 +2817,7 @@ var baseColors = {
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", contrast: "#008E46", invertedContrast: "#FFFFFF", input: "#eeeaf4", tertiary: "#EFF4F5", text: "#191326", textDisabled: "#BDC2C4", textSubtle: "#191326", borderColor: "#E9EAEB", card: "#FFFFFF", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", contrast: "#008E46", invertedContrast: "#FFFFFF", input: "#eeeaf4", tertiary: "#EFF4F5", text: "#008E46", textDisabled: "#BDC2C4", textSubtle: "#191326", borderColor: "#E9EAEB", card: "#FFFFFF", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
     } });
 var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#008E46", background: "#343135", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#008E46", primaryDark: "#0098A1", tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#c9c4d4", borderColor: "#524B63", card: "#27262c", gradients: {
