@@ -5,6 +5,7 @@ import { LogoIcon } from "../../components/Svg";
 import Flex from "../../components/Flex/Flex";
 import { HamburgerIcon, HamburgerCloseIcon, LogoIcon as LogoWithText } from "./icons";
 import MenuButton from "./MenuButton";
+import ReactSoundCloud from "react-soundcloud-embedded";
 
 interface Props {
   isPushed: boolean;
@@ -37,6 +38,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
     <>
       <LogoIcon className="mobile-icon" />
       <LogoWithText className="desktop-icon" isDark={isDark} />
+        <ReactSoundCloud url='https://soundcloud.com/bonsound/pierre-kwenders-mardi-gras-feat-jacobus' width='100%' height='30%'/>
     </>
   );
 
