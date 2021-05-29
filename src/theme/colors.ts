@@ -5,7 +5,7 @@ export const baseColors = {
   primary: "#008E46",
   primaryBright: "#008E46",
   primaryDark: "#008E46",
-  secondary: "#008E46",
+  secondary: "#ED9D08",
   success: "#31D0AA",
   warning: "#FFB237",
 };
@@ -17,7 +17,7 @@ export const brandColors = {
 export const lightColors: Colors = {
   ...baseColors,
   ...brandColors,
-  background: "TeaSwap_Background_v2.png",
+  background: "#FAF9FA",
   backgroundDisabled: "#E9EAEB",
   contrast: "#008E46",
   invertedContrast: "#FFFFFF",
