@@ -6,7 +6,6 @@ import noop from 'lodash/noop';
 import debounce from 'lodash/debounce';
 import throttle from 'lodash/throttle';
 import { Link as Link$1, NavLink, useLocation } from 'react-router-dom';
-import ReactSoundCloud from 'react-soundcloud-embedded';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 /*! *****************************************************************************
@@ -2072,11 +2071,12 @@ var Logo = function (_a) {
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React.createElement(React.Fragment, null,
         React.createElement(Icon$R, { className: "mobile-icon" }),
+        React.createElement(Logo$1, { className: "desktop-icon", isDark: isDark }),
+        React.createElement(Icon$R, { className: "mobile-icon" }),
         React.createElement(Logo$1, { className: "desktop-icon", isDark: isDark })));
     return (React.createElement(Flex, null,
         React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React.createElement(Icon$s, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$t, { width: "24px", color: "textSubtle" }))),
-        isAbsoluteUrl ? (React.createElement(StyledLink, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React.createElement(StyledLink, { to: href, "aria-label": "Pancake home page" }, innerLogo)),
-        React.createElement(ReactSoundCloud, { url: 'https://soundcloud.com/bonsound/pierre-kwenders-mardi-gras-feat-jacobus', width: '100%', height: '30%' })));
+        isAbsoluteUrl ? (React.createElement(StyledLink, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React.createElement(StyledLink, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
 };
 var templateObject_1$c;
 

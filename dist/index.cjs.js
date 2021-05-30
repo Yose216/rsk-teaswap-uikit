@@ -10,7 +10,6 @@ var noop = require('lodash/noop');
 var debounce = require('lodash/debounce');
 var throttle = require('lodash/throttle');
 var reactRouterDom = require('react-router-dom');
-var ReactSoundCloud = require('react-soundcloud-embedded');
 var reactTransitionGroup = require('react-transition-group');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
@@ -21,7 +20,6 @@ var get__default = /*#__PURE__*/_interopDefaultLegacy(get);
 var noop__default = /*#__PURE__*/_interopDefaultLegacy(noop);
 var debounce__default = /*#__PURE__*/_interopDefaultLegacy(debounce);
 var throttle__default = /*#__PURE__*/_interopDefaultLegacy(throttle);
-var ReactSoundCloud__default = /*#__PURE__*/_interopDefaultLegacy(ReactSoundCloud);
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -2086,11 +2084,12 @@ var Logo = function (_a) {
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React__default['default'].createElement(React__default['default'].Fragment, null,
         React__default['default'].createElement(Icon$R, { className: "mobile-icon" }),
+        React__default['default'].createElement(Logo$1, { className: "desktop-icon", isDark: isDark }),
+        React__default['default'].createElement(Icon$R, { className: "mobile-icon" }),
         React__default['default'].createElement(Logo$1, { className: "desktop-icon", isDark: isDark })));
     return (React__default['default'].createElement(Flex, null,
         React__default['default'].createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React__default['default'].createElement(Icon$s, { width: "24px", color: "textSubtle" })) : (React__default['default'].createElement(Icon$t, { width: "24px", color: "textSubtle" }))),
-        isAbsoluteUrl ? (React__default['default'].createElement(StyledLink, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React__default['default'].createElement(StyledLink, { to: href, "aria-label": "Pancake home page" }, innerLogo)),
-        React__default['default'].createElement(ReactSoundCloud__default['default'], { url: 'https://soundcloud.com/bonsound/pierre-kwenders-mardi-gras-feat-jacobus', width: '100%', height: '30%' })));
+        isAbsoluteUrl ? (React__default['default'].createElement(StyledLink, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React__default['default'].createElement(StyledLink, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
 };
 var templateObject_1$c;
 
