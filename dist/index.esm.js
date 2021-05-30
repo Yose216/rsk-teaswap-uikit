@@ -340,7 +340,7 @@ var Icon$S = function (props) {
 
 var Icon$R = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
-        React.createElement("image", { width: "32", height: "32", href: "/images/egg/logo.png" })));
+        React.createElement("image", { width: "32", height: "32", href: "/images/egg/LogoTextNewDark.png" })));
 };
 
 var Icon$Q = function (props) {
@@ -2071,8 +2071,6 @@ var Logo = function (_a) {
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React.createElement(React.Fragment, null,
         React.createElement(Icon$R, { className: "mobile-icon" }),
-        React.createElement(Logo$1, { className: "desktop-icon", isDark: isDark }),
-        React.createElement(Icon$R, { className: "mobile-icon" }),
         React.createElement(Logo$1, { className: "desktop-icon", isDark: isDark })));
     return (React.createElement(Flex, null,
         React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React.createElement(Icon$s, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$t, { width: "24px", color: "textSubtle" }))),
@@ -2346,6 +2344,8 @@ var PanelFooter = function (_a) {
     return (React.createElement(Container, null,
         React.createElement(SocialEntry, null,
             cakePriceUsd ? (React.createElement(PriceLink, { href: priceLink, target: "_blank" },
+                React.createElement(Icon$M, { width: "24px", mr: "8px" }),
+                React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)),
                 React.createElement(Icon$M, { width: "24px", mr: "8px" }),
                 React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 })),
             React.createElement(Flex, null, socials.map(function (social, index) {

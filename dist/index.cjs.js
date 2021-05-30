@@ -353,7 +353,7 @@ var Icon$S = function (props) {
 
 var Icon$R = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
-        React__default['default'].createElement("image", { width: "32", height: "32", href: "/images/egg/logo.png" })));
+        React__default['default'].createElement("image", { width: "32", height: "32", href: "/images/egg/LogoTextNewDark.png" })));
 };
 
 var Icon$Q = function (props) {
@@ -2084,8 +2084,6 @@ var Logo = function (_a) {
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React__default['default'].createElement(React__default['default'].Fragment, null,
         React__default['default'].createElement(Icon$R, { className: "mobile-icon" }),
-        React__default['default'].createElement(Logo$1, { className: "desktop-icon", isDark: isDark }),
-        React__default['default'].createElement(Icon$R, { className: "mobile-icon" }),
         React__default['default'].createElement(Logo$1, { className: "desktop-icon", isDark: isDark })));
     return (React__default['default'].createElement(Flex, null,
         React__default['default'].createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React__default['default'].createElement(Icon$s, { width: "24px", color: "textSubtle" })) : (React__default['default'].createElement(Icon$t, { width: "24px", color: "textSubtle" }))),
@@ -2359,6 +2357,8 @@ var PanelFooter = function (_a) {
     return (React__default['default'].createElement(Container, null,
         React__default['default'].createElement(SocialEntry, null,
             cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
+                React__default['default'].createElement(Icon$M, { width: "24px", mr: "8px" }),
+                React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)),
                 React__default['default'].createElement(Icon$M, { width: "24px", mr: "8px" }),
                 React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
             React__default['default'].createElement(Flex, null, socials.map(function (social, index) {
