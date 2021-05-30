@@ -28,3 +28,7 @@ export { default as TicketIcon } from "./Ticket";
 export { default as TradeIcon } from "./Trade";
 export { default as TwitterIcon } from "./Twitter";
 export { default as RoadmapIcon } from "./Roadmap";
+export { default as ListingsIcon } from "./Listings";
+export { default as LiquidityIcon } from "./Liquidity";
+export { default as GraphIcon } from "./Graph";
+
