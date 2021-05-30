@@ -25,3 +25,6 @@ export { default as RoadmapIcon } from "./Roadmap";
 export { default as BondsIcon } from "./Bonds";
 export { default as VaultsIcon } from "./Vaults";
 export { default as EggHouseIcon } from "./EggHouse";
+export { default as ListingsIcon } from "./Listings";
+export { default as LiquidityIcon } from "./Liquidity";
+export { default as GraphIcon } from "./Graph";
