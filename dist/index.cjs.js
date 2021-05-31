@@ -2382,13 +2382,13 @@ var PanelFooter = function (_a) {
                 React__default['default'].createElement(Icon$Z, null))));
     }
     return (React__default['default'].createElement(Container, null,
-        cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
-            React__default['default'].createElement(Icon$P, { width: "35px", mr: "4px" }),
-            React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
-        mintPriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
-            React__default['default'].createElement(Icon$O, { width: "35px", mr: "4px" }),
-            React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + mintPriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
         React__default['default'].createElement(SocialEntry, null,
+            cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
+                React__default['default'].createElement(Icon$P, { width: "35px", mr: "4px" }),
+                React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
+            mintPriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
+                React__default['default'].createElement(Icon$O, { width: "35px", mr: "4px" }),
+                React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + mintPriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
             React__default['default'].createElement(Flex, null, socials.map(function (social, index) {
                 var Icon = Icons[social.icon];
                 var iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };

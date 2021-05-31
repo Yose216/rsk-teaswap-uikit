@@ -78,23 +78,23 @@ const PanelFooter: React.FC<Props> = ({
 
   return (
     <Container>
-      {cakePriceUsd ? (
-          <PriceLink href={priceLink} target="_blank">
-            <PancakeRoundIcon width="35px" mr="4px" />
-            <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
-          </PriceLink>
-      ) : (
-          <Skeleton width={80} height={24} />
-      )}
-      {mintPriceUsd ? (
-          <PriceLink href={priceLink} target="_blank">
-            <PancakeRoundIcon2 width="35px" mr="4px" />
-            <Text color="textSubtle" bold>{`$${mintPriceUsd.toFixed(3)}`}</Text>
-          </PriceLink>
-      ) : (
-          <Skeleton width={80} height={24} />
-      )}
       <SocialEntry>
+        {cakePriceUsd ? (
+            <PriceLink href={priceLink} target="_blank">
+              <PancakeRoundIcon width="35px" mr="4px" />
+              <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+            </PriceLink>
+        ) : (
+            <Skeleton width={80} height={24} />
+        )}
+        {mintPriceUsd ? (
+            <PriceLink href={priceLink} target="_blank">
+              <PancakeRoundIcon2 width="35px" mr="4px" />
+              <Text color="textSubtle" bold>{`$${mintPriceUsd.toFixed(3)}`}</Text>
+            </PriceLink>
+        ) : (
+            <Skeleton width={80} height={24} />
+        )}
         <Flex>
           {socials.map((social, index) => {
             const Icon = Icons[social.icon];
