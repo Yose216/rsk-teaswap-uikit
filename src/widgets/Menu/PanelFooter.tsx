@@ -51,7 +51,7 @@ const SocialEntry = styled.div`
   align-items: center;
   justify-content: space-between;
   height: ${MENU_ENTRY_HEIGHT}px;
-  padding: 0 16px;
+  padding: 16px;
 `;
 
 const PanelFooter: React.FC<Props> = ({
@@ -78,28 +78,28 @@ const PanelFooter: React.FC<Props> = ({
 
   return (
     <Container>
-      <SocialEntry>
-        {cakePriceUsd ? (
+      {cakePriceUsd ? (
           <PriceLink href={priceLink} target="_blank">
-            <PancakeRoundIcon width="24px" mr="4px" />
+            <PancakeRoundIcon width="24px" mr="8px" />
             <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
           </PriceLink>
-        ) : (
+      ) : (
           <Skeleton width={80} height={24} />
-        )}
-          {mintPriceUsd ? (
-              <PriceLink href={priceLink} target="_blank">
-                  <PancakeRoundIcon2 width="24px" mr="4px" />
-                  <Text color="textSubtle" bold>{`$${mintPriceUsd.toFixed(3)}`}</Text>
-              </PriceLink>
-          ) : (
-              <Skeleton width={80} height={24} />
-          )}
+      )}
+      {mintPriceUsd ? (
+          <PriceLink href={priceLink} target="_blank">
+            <PancakeRoundIcon2 width="24px" mr="8px" />
+            <Text color="textSubtle" bold>{`$${mintPriceUsd.toFixed(3)}`}</Text>
+          </PriceLink>
+      ) : (
+          <Skeleton width={80} height={24} />
+      )}
+      <SocialEntry>
         <Flex>
           {socials.map((social, index) => {
             const Icon = Icons[social.icon];
             const iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
-            const mr = index < socials.length - 1 ? "8px" : 0;
+            const mr = index < socials.length - 1 ? "20px" : 0;
             if (social.items) {
               return (
                 <Dropdown key={social.label} position="top" target={<Icon {...iconProps} mr={mr} />}>
