@@ -2250,6 +2250,16 @@ var socials = [
         icon: "TwitterIcon",
         href: "https://twitter.com/SwapTea",
     },
+    {
+        label: "Medium",
+        icon: "MediumIcon",
+        href: "https://teaswap-finance.medium.com/",
+    },
+    {
+        label: "Github",
+        icon: "GithubIcon",
+        href: "https://github.com/Tea-Swap",
+    },
 ];
 var MENU_HEIGHT = 64;
 var MENU_ENTRY_HEIGHT = 48;
