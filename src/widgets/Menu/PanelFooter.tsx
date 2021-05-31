@@ -80,7 +80,7 @@ const PanelFooter: React.FC<Props> = ({
     <Container>
       {cakePriceUsd ? (
           <PriceLink href={priceLink} target="_blank">
-            <PancakeRoundIcon width="24px" mr="8px" />
+            <PancakeRoundIcon width="35px" mr="4px" />
             <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
           </PriceLink>
       ) : (
@@ -88,7 +88,7 @@ const PanelFooter: React.FC<Props> = ({
       )}
       {mintPriceUsd ? (
           <PriceLink href={priceLink} target="_blank">
-            <PancakeRoundIcon2 width="24px" mr="8px" />
+            <PancakeRoundIcon2 width="35px" mr="4px" />
             <Text color="textSubtle" bold>{`$${mintPriceUsd.toFixed(3)}`}</Text>
           </PriceLink>
       ) : (

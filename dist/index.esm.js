@@ -2211,6 +2211,16 @@ var links = [
 ];
 var socials = [
     {
+        label: "Medium",
+        icon: "MediumIcon",
+        href: "https://teaswap-finance.medium.com/",
+    },
+    {
+        label: "Github",
+        icon: "GithubIcon",
+        href: "https://github.com/Tea-Swap",
+    },
+    {
         label: "Telegram",
         icon: "TelegramIcon",
         items: [
@@ -2236,16 +2246,6 @@ var socials = [
         label: "Twitter",
         icon: "TwitterIcon",
         href: "https://twitter.com/SwapTea",
-    },
-    {
-        label: "Medium",
-        icon: "MediumIcon",
-        href: "https://teaswap-finance.medium.com/",
-    },
-    {
-        label: "Github",
-        icon: "GithubIcon",
-        href: "https://github.com/Tea-Swap",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -2370,10 +2370,10 @@ var PanelFooter = function (_a) {
     }
     return (React.createElement(Container, null,
         cakePriceUsd ? (React.createElement(PriceLink, { href: priceLink, target: "_blank" },
-            React.createElement(Icon$P, { width: "24px", mr: "8px" }),
+            React.createElement(Icon$P, { width: "35px", mr: "4px" }),
             React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 })),
         mintPriceUsd ? (React.createElement(PriceLink, { href: priceLink, target: "_blank" },
-            React.createElement(Icon$O, { width: "24px", mr: "8px" }),
+            React.createElement(Icon$O, { width: "35px", mr: "4px" }),
             React.createElement(Text, { color: "textSubtle", bold: true }, "$" + mintPriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 })),
         React.createElement(SocialEntry, null,
             React.createElement(Flex, null, socials.map(function (social, index) {

@@ -2224,6 +2224,16 @@ var links = [
 ];
 var socials = [
     {
+        label: "Medium",
+        icon: "MediumIcon",
+        href: "https://teaswap-finance.medium.com/",
+    },
+    {
+        label: "Github",
+        icon: "GithubIcon",
+        href: "https://github.com/Tea-Swap",
+    },
+    {
         label: "Telegram",
         icon: "TelegramIcon",
         items: [
@@ -2249,16 +2259,6 @@ var socials = [
         label: "Twitter",
         icon: "TwitterIcon",
         href: "https://twitter.com/SwapTea",
-    },
-    {
-        label: "Medium",
-        icon: "MediumIcon",
-        href: "https://teaswap-finance.medium.com/",
-    },
-    {
-        label: "Github",
-        icon: "GithubIcon",
-        href: "https://github.com/Tea-Swap",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -2383,10 +2383,10 @@ var PanelFooter = function (_a) {
     }
     return (React__default['default'].createElement(Container, null,
         cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
-            React__default['default'].createElement(Icon$P, { width: "24px", mr: "8px" }),
+            React__default['default'].createElement(Icon$P, { width: "35px", mr: "4px" }),
             React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
         mintPriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
-            React__default['default'].createElement(Icon$O, { width: "24px", mr: "8px" }),
+            React__default['default'].createElement(Icon$O, { width: "35px", mr: "4px" }),
             React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + mintPriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
         React__default['default'].createElement(SocialEntry, null,
             React__default['default'].createElement(Flex, null, socials.map(function (social, index) {

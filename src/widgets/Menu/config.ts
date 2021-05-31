@@ -115,6 +115,16 @@ export const links = [
 
 export const socials = [
   {
+    label: "Medium",
+    icon: "MediumIcon",
+    href: "https://teaswap-finance.medium.com/",
+  },
+  {
+    label: "Github",
+    icon: "GithubIcon",
+    href: "https://github.com/Tea-Swap",
+  },
+  {
     label: "Telegram",
     icon: "TelegramIcon",
     items: [
@@ -140,16 +150,6 @@ export const socials = [
     label: "Twitter",
     icon: "TwitterIcon",
     href: "https://twitter.com/SwapTea",
-  },
-  {
-    label: "Medium",
-    icon: "MediumIcon",
-    href: "https://teaswap-finance.medium.com/",
-  },
-  {
-    label: "Github",
-    icon: "GithubIcon",
-    href: "https://github.com/Tea-Swap",
   },
 ];
 
