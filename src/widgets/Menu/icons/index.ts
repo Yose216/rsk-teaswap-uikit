@@ -24,6 +24,7 @@ export { default as TelegramIcon } from "./Telegram";
 export { default as TicketIcon } from "./Ticket";
 export { default as TradeIcon } from "./Trade";
 export { default as MintIcon } from "./Mint";
+export { default as BallonIcon } from "./Ballon";
 export { default as SugarIcon } from "./Sugar";
 export { default as TwitterIcon } from "./Twitter";
 export { default as RoadmapIcon } from "./Roadmap";
