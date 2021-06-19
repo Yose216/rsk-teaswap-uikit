@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {PancakeRoundIcon, PancakeRoundIcon2, CogIcon, SvgProps} from "../../components/Svg";
+import {PancakeRoundIcon, PancakeRoundIcon2, PancakeRoundIcon3, CogIcon, SvgProps} from "../../components/Svg";
 import Text from "../../components/Text/Text";
 import Flex from "../../components/Flex/Flex";
 import Dropdown from "../../components/Dropdown/Dropdown";
@@ -62,6 +62,7 @@ const PanelFooter: React.FC<Props> = ({
                                           isDark,
                                           cakePriceUsd,
                                           mintPriceUsd,
+                                          teasportPriceUsd,
                                           currentLang,
                                           langs,
                                           setLang,
@@ -92,6 +93,14 @@ const PanelFooter: React.FC<Props> = ({
                     <PriceLink href={priceLink} target="_blank">
                         <PancakeRoundIcon2 width="35px" mr="4px"/>
                         <Text color="textSubtle" bold>{`$${mintPriceUsd.toFixed(3)}`}</Text>
+                    </PriceLink>
+                ) : (
+                    <Skeleton width={80} height={24}/>
+                )}
+                {teasportPriceUsd ? (
+                    <PriceLink href={priceLink} target="_blank">
+                        <PancakeRoundIcon3 width="35px" mr="4px"/>
+                        <Text color="textSubtle" bold>{`$${teasportPriceUsd.toFixed(3)}`}</Text>
                     </PriceLink>
                 ) : (
                     <Skeleton width={80} height={24}/>

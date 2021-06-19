@@ -69,6 +69,7 @@ const Menu: React.FC<NavProps> = ({
   currentLang,
   cakePriceUsd,
   mintPriceUsd,
+  teasportPriceUsd,
   links,
   priceLink,
   profile,
@@ -138,6 +139,7 @@ const Menu: React.FC<NavProps> = ({
           currentLang={currentLang}
           cakePriceUsd={cakePriceUsd}
           mintPriceUsd={mintPriceUsd}
+          teasportPriceUs={teasportPriceUsd}
           pushNav={setIsPushed}
           links={links}
           priceLink={priceLink}
