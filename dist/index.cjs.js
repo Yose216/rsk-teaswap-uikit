@@ -2017,7 +2017,7 @@ var Icon$d = function (props) {
 
 var Icon$c = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 90 90" }, props),
-        React__default['default'].createElement("image", { width: 90, height: 110, href: "/images/egg/TeaSportV1.png" })));
+        React__default['default'].createElement("image", { width: 70, height: 90, href: "/images/egg/TeaSportV1.png" })));
 };
 
 var Icon$b = function (props) {
