@@ -2389,13 +2389,13 @@ var PanelFooter = function (_a) {
         React.createElement(SocialEntry, null,
             cakePriceUsd ? (React.createElement(PriceLink, { href: priceLink, target: "_blank" },
                 React.createElement(Icon$S, { width: "22px", mr: "4px" }),
-                React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 })),
+                React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(2)))) : (React.createElement(Skeleton, { width: 80, height: 24 })),
             mintPriceUsd ? (React.createElement(PriceLink, { href: priceLink, target: "_blank" },
                 React.createElement(Icon$R, { width: "22px", mr: "4px" }),
-                React.createElement(Text, { color: "textSubtle", bold: true }, "$" + mintPriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 })),
+                React.createElement(Text, { color: "textSubtle", bold: true }, "$" + mintPriceUsd.toFixed(2)))) : (React.createElement(Skeleton, { width: 80, height: 24 })),
             teasportPriceUsd ? (React.createElement(PriceLink, { href: priceLink, target: "_blank" },
                 React.createElement(Icon$Q, { width: "22px", mr: "4px" }),
-                React.createElement(Text, { color: "textSubtle", bold: true }, "$" + teasportPriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 }))),
+                React.createElement(Text, { color: "textSubtle", bold: true }, "$" + teasportPriceUsd.toFixed(2)))) : (React.createElement(Skeleton, { width: 80, height: 24 }))),
         React.createElement(SocialEntry, null,
             React.createElement(Flex, null, socials.map(function (social, index) {
                 var Icon = Icons[social.icon];

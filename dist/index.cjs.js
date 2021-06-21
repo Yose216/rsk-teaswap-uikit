@@ -2402,13 +2402,13 @@ var PanelFooter = function (_a) {
         React__default['default'].createElement(SocialEntry, null,
             cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
                 React__default['default'].createElement(Icon$S, { width: "22px", mr: "4px" }),
-                React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
+                React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(2)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
             mintPriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
                 React__default['default'].createElement(Icon$R, { width: "22px", mr: "4px" }),
-                React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + mintPriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
+                React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + mintPriceUsd.toFixed(2)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
             teasportPriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
                 React__default['default'].createElement(Icon$Q, { width: "22px", mr: "4px" }),
-                React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + teasportPriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }))),
+                React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + teasportPriceUsd.toFixed(2)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }))),
         React__default['default'].createElement(SocialEntry, null,
             React__default['default'].createElement(Flex, null, socials.map(function (social, index) {
                 var Icon = Icons[social.icon];
