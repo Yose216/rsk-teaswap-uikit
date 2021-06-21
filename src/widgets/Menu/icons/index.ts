@@ -32,4 +32,4 @@ export { default as RoadmapIcon } from "./Roadmap";
 export { default as ListingsIcon } from "./Listings";
 export { default as LiquidityIcon } from "./Liquidity";
 export { default as GraphIcon } from "./Graph";
-export { default as VaultIcon} from "./Vaults";
+export { default as VaultsIcon} from "./Vaults";
