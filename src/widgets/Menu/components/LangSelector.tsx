@@ -1,19 +1,15 @@
 import React from "react";
-import { SvgProps } from "../../../components/Svg";
 import Text from "../../../components/Text/Text";
 import Dropdown from "../../../components/Dropdown/Dropdown";
 import Button from "../../../components/Button/Button";
-import * as IconModule from "../icons";
-import { LangType } from "../types";
+import LanguageIcon from "../../../components/Svg/Icons/Language";
+import { Language } from "../types";
 import MenuButton from "./MenuButton";
-
-const Icons = (IconModule as unknown) as { [key: string]: React.FC<SvgProps> };
-const { LanguageIcon } = Icons;
 
 interface Props {
   currentLang: string;
-  langs: LangType[];
-  setLang: (lang: LangType) => void;
+  langs: Language[];
+  setLang: (lang: Language) => void;
 }
 
 const LangSelector: React.FC<Props> = ({ currentLang, langs, setLang }) => (
@@ -27,7 +23,7 @@ const LangSelector: React.FC<Props> = ({ currentLang, langs, setLang }) => (
   >
     {langs.map((lang) => (
       <MenuButton
-        key={lang.code}
+        key={lang.locale}
         fullWidth
         onClick={() => setLang(lang)}
         // Safari fix

@@ -2,7 +2,7 @@ import React from "react";
 import noop from "lodash/noop";
 import { BrowserRouter } from "react-router-dom";
 import { renderWithTheme } from "../../testHelpers";
-import { Menu, menuConfig, LangType } from "../../widgets/Menu";
+import { Menu, menuConfig, Language } from "../../widgets/Menu";
 
 /**
  * @see https://jestjs.io/docs/en/manual-mocks
@@ -21,7 +21,11 @@ Object.defineProperty(window, "matchMedia", {
   })),
 });
 
-const langs: LangType[] = [...Array(20)].map((_, i) => ({ code: `en${i}`, language: `English${i}` }));
+const langs: Language[] = [...Array(20)].map((_, i) => ({
+  code: `en${i}`,
+  language: `English${i}`,
+  locale: `en${i}-locale`,
+}));
 
 it("renders correctly", () => {
   const { asFragment } = renderWithTheme(
@@ -34,7 +38,7 @@ it("renders correctly", () => {
         toggleTheme={noop}
         langs={langs}
         setLang={noop}
-        currentLang="EN"
+        currentLang="en-US"
         cakePriceUsd={0.23158668932877668}
         links={menuConfig}
       >
@@ -70,7 +74,7 @@ it("renders correctly", () => {
       -webkit-align-self: center;
       -ms-flex-item-align: center;
       align-self: center;
-      fill: #8f80ba;
+      fill: #7A6EAA;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -80,7 +84,7 @@ it("renders correctly", () => {
       -webkit-align-self: center;
       -ms-flex-item-align: center;
       align-self: center;
-      fill: #452A7A;
+      fill: #280D5F;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -90,7 +94,7 @@ it("renders correctly", () => {
       -webkit-align-self: center;
       -ms-flex-item-align: center;
       align-self: center;
-      fill: #452A7A;
+      fill: #280D5F;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -272,7 +276,7 @@ it("renders correctly", () => {
     }
 
     .c4 {
-      color: #452A7A;
+      color: #280D5F;
       padding: 0 8px;
       border-radius: 8px;
     }
@@ -293,7 +297,7 @@ it("renders correctly", () => {
     }
 
     .c6 .desktop-icon {
-      width: 156px;
+      width: 160px;
       display: none;
     }
 
@@ -355,7 +359,7 @@ it("renders correctly", () => {
       padding: 0 16px;
       font-size: 16px;
       background-color: transparent;
-      color: #8f80ba;
+      color: #7A6EAA;
       box-shadow: inset 4px 0px 0px #1FC7D4;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -376,7 +380,7 @@ it("renders correctly", () => {
     }
 
     .c12 svg {
-      fill: #8f80ba;
+      fill: #7A6EAA;
     }
 
     .c12:hover {
@@ -387,7 +391,7 @@ it("renders correctly", () => {
       background-clip: text;
       -webkit-animation: fKQuCC 3s ease-in-out infinite;
       animation: fKQuCC 3s ease-in-out infinite;
-      background: linear-gradient(139.73deg,#E6FDFF 0%,#F3EFFF 100%);
+      background: linear-gradient(139.73deg,#E5FDFF 0%,#F3EFFF 100%);
       background-size: 400% 100%;
     }
 
@@ -405,7 +409,7 @@ it("renders correctly", () => {
       padding: 0 16px;
       font-size: 16px;
       background-color: transparent;
-      color: #8f80ba;
+      color: #7A6EAA;
       box-shadow: none;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -426,7 +430,7 @@ it("renders correctly", () => {
     }
 
     .c16 svg {
-      fill: #8f80ba;
+      fill: #7A6EAA;
     }
 
     .c16:hover {
@@ -437,7 +441,7 @@ it("renders correctly", () => {
       background-clip: text;
       -webkit-animation: fKQuCC 3s ease-in-out infinite;
       animation: fKQuCC 3s ease-in-out infinite;
-      background: linear-gradient(139.73deg,#E6FDFF 0%,#F3EFFF 100%);
+      background: linear-gradient(139.73deg,#E5FDFF 0%,#F3EFFF 100%);
       background-size: 400% 100%;
     }
 
@@ -542,7 +546,7 @@ it("renders correctly", () => {
       flex-shrink: 0;
       background-color: #FFFFFF;
       width: 0;
-      height: 100vh;
+      height: 100%;
       -webkit-transition: padding-top 0.2s,width 0.2s cubic-bezier(0.4,0,0.2,1);
       transition: padding-top 0.2s,width 0.2s cubic-bezier(0.4,0,0.2,1);
       border-right: 0;
@@ -817,12 +821,12 @@ it("renders correctly", () => {
             >
               <div
                 class="c12"
-                role="button"
               >
                 <a
                   aria-current="page"
                   class="active"
                   href="/"
+                  role="button"
                 >
                   <svg
                     class="c13"
@@ -885,10 +889,10 @@ it("renders correctly", () => {
               </div>
               <div
                 class="c16"
-                role="button"
               >
                 <a
                   href="/farms"
+                  role="button"
                 >
                   <svg
                     class="c13"
@@ -930,10 +934,10 @@ it("renders correctly", () => {
               </div>
               <div
                 class="c16"
-                role="button"
               >
                 <a
                   href="/syrup"
+                  role="button"
                 >
                   <svg
                     class="c13"
@@ -960,10 +964,10 @@ it("renders correctly", () => {
               </div>
               <div
                 class="c16"
-                role="button"
               >
                 <a
                   href="/lottery"
+                  role="button"
                 >
                   <svg
                     class="c13"
@@ -987,10 +991,10 @@ it("renders correctly", () => {
               </div>
               <div
                 class="c16"
-                role="button"
               >
                 <a
                   href="/nft"
+                  role="button"
                 >
                   <svg
                     class="c13"
@@ -1012,10 +1016,10 @@ it("renders correctly", () => {
               </div>
               <div
                 class="c16"
-                role="button"
               >
                 <a
                   href="/competition"
+                  role="button"
                 >
                   <svg
                     class="c13"

@@ -5,11 +5,11 @@ import BalanceInput from "../../components/BalanceInput/BalanceInput";
 const handleChange = jest.fn();
 
 it("renders correctly", () => {
-  const { asFragment } = renderWithTheme(<BalanceInput value="14" currencyValue="15 USD" onChange={handleChange} />);
+  const { asFragment } = renderWithTheme(<BalanceInput value="14" currencyValue="15 USD" onUserInput={handleChange} />);
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       .c3 {
-      color: #8f80ba;
+      color: #7A6EAA;
       font-size: 12px;
       font-weight: 400;
       line-height: 1.5;
@@ -22,7 +22,7 @@ it("renders correctly", () => {
       border: 0;
       border-radius: 16px;
       box-shadow: inset 0px 2px 2px -1px rgba(74,74,104,0.1);
-      color: #452A7A;
+      color: #280D5F;
       display: block;
       font-size: 16px;
       height: 40px;
@@ -32,19 +32,19 @@ it("renders correctly", () => {
     }
 
     .c1::-webkit-input-placeholder {
-      color: #8f80ba;
+      color: #7A6EAA;
     }
 
     .c1::-moz-placeholder {
-      color: #8f80ba;
+      color: #7A6EAA;
     }
 
     .c1:-ms-input-placeholder {
-      color: #8f80ba;
+      color: #7A6EAA;
     }
 
     .c1::placeholder {
-      color: #8f80ba;
+      color: #7A6EAA;
     }
 
     .c1:disabled {
@@ -76,19 +76,19 @@ it("renders correctly", () => {
     }
 
     .c2::-webkit-input-placeholder {
-      color: #8f80ba;
+      color: #7A6EAA;
     }
 
     .c2::-moz-placeholder {
-      color: #8f80ba;
+      color: #7A6EAA;
     }
 
     .c2:-ms-input-placeholder {
-      color: #8f80ba;
+      color: #7A6EAA;
     }
 
     .c2::placeholder {
-      color: #8f80ba;
+      color: #7A6EAA;
     }
 
     .c2:focus:not(:disabled) {
@@ -100,9 +100,11 @@ it("renders correctly", () => {
       >
         <input
           class="c1 c2"
+          inputmode="decimal"
+          min="0"
+          pattern="^[0-9]*[.,]?[0-9]{0,18}$"
           placeholder="0.0"
           scale="md"
-          type="number"
           value="14"
         />
         <div

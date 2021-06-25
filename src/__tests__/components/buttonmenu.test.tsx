@@ -21,6 +21,7 @@ it("renders correctly", () => {
       display: -webkit-inline-flex;
       display: -ms-inline-flexbox;
       display: inline-flex;
+      border: 1px solid #E9EAEB;
     }
 
     .c0 > button + button,
@@ -143,7 +144,7 @@ it("renders correctly", () => {
 
     .c3 {
       background-color: transparent;
-      color: #8f80ba;
+      color: #7A6EAA;
     }
 
     .c3:hover:not(:disabled):not(:active) {

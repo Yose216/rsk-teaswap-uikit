@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { PancakeRoundIcon, PancakeRoundIcon2, PancakeRoundIcon3, CogIcon, SvgProps } from "../../../components/Svg";
 import Text from "../../../components/Text/Text";
-import Flex from "../../../components/Flex/Flex";
+import Flex from "../../../components/Box/Flex";
 import Dropdown from "../../../components/Dropdown/Dropdown";
 import Link from "../../../components/Link/Link";
 import Skeleton from "../../../components/Skeleton/Skeleton";
@@ -12,6 +12,7 @@ import MenuButton from "./MenuButton";
 import * as IconModule from "../icons";
 import { PanelProps, PushedProps } from "../types";
 import { socials, MENU_ENTRY_HEIGHT } from "../config";
+
 interface Props extends PanelProps, PushedProps {}
 
 const Icons = (IconModule as unknown) as { [key: string]: React.FC<SvgProps> };
@@ -130,7 +131,7 @@ const PanelFooter: React.FC<Props> = ({
                     })}
                 </Flex>
             </SocialEntry>
-      <SettingsEntry>
+            <SettingsEntry>
                 <Button variant="text" onClick={() => toggleTheme(!isDark)}>
                     {/* alignItems center is a Safari fix */}
                     <Flex alignItems="center">

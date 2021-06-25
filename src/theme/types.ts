@@ -29,10 +29,12 @@ export type Shadows = {
 
 export type Gradients = {
   bubblegum: string;
+  inverseBubblegum: string;
   cardHeader: string;
   blue: string;
   violet: string;
   violetAlt: string;
+  gold: string;
 };
 
 export type Colors = {
@@ -44,8 +46,10 @@ export type Colors = {
   success: string;
   failure: string;
   warning: string;
+  cardBorder: string;
   contrast: string;
   dropdown: string;
+  dropdownDeep: string;
   invertedContrast: string;
   input: string;
   inputSecondary: string;
@@ -53,15 +57,17 @@ export type Colors = {
   backgroundDisabled: string;
   backgroundAlt: string;
   text: string;
+  borderColor: string;
   textDisabled: string;
   textSubtle: string;
-  borderColor: string;
+  disabled: string;
 
   // Gradients
   gradients: Gradients;
 
-  // Brand colors
+  // Additional colors
   binance: string;
+  overlay: string;
 };
 
 export type ZIndices = {

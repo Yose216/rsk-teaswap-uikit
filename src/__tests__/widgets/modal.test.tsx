@@ -12,7 +12,7 @@ it("renders correctly", () => {
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       .c5 {
-      color: #452A7A;
+      color: #280D5F;
       font-size: 16px;
       font-weight: 600;
       line-height: 1.5;
@@ -117,7 +117,7 @@ it("renders correctly", () => {
       -ms-flex-align: center;
       align-items: center;
       background: transparent;
-      border-bottom: 1px solid #E9EAEB;
+      border-bottom: 1px solid #E7E3EB;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -139,15 +139,18 @@ it("renders correctly", () => {
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column;
+      max-height: 90vh;
+      overflow-y: auto;
     }
 
     .c1 {
       overflow: hidden;
       background: #FFFFFF;
       box-shadow: 0px 20px 36px -8px rgba(14,14,44,0.1),0px 1px 1px rgba(0,0,0,0.05);
-      border: 1px solid #E9EAEB;
+      border: 1px solid #E7E3EB;
       border-radius: 32px;
       width: 100%;
+      max-height: 100vh;
       z-index: 100;
     }
 

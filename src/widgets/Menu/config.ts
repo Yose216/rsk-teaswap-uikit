@@ -39,7 +39,6 @@ export const links = [
     label: "Farms",
     icon: "FarmIcon",
     href: "/farms",
-    status: status.LIVE,
   },
   {
     label: "Pools",
@@ -57,20 +56,12 @@ export const links = [
     href: "/nft",
   },
   {
-    label: "Team Battle",
-    icon: "TeamBattleIcon",
-    href: "/competition",
-    status: status.SOON,
-  },
-  {
     label: "Profile & Teams",
     icon: "GroupsIcon",
-    status: status.LIVE,
     items: [
       {
         label: "Leaderboard",
-        href: "/teams",
-        status: status.NEW,
+        href: "/",
       },
       {
         label: "YourProfile",
@@ -119,21 +110,21 @@ export const links = [
     label: "More",
     icon: "MoreIcon",
     items: [
-      {
-        label: "Voting",
-        href: "https://voting.pancakeswap.finance",
-      },
+      // {
+      //   label: "Voting",
+      //   href: "https://voting.pancakeswap.finance",
+      // },
       {
         label: "Github",
-        href: "https://github.com/pancakeswap",
+        href: "https://github.com/Tea-Swap",
       },
-      {
-        label: "Docs",
-        href: "https://docs.pancakeswap.finance",
-      },
+      // {
+      //   label: "Docs",
+      //   href: "https://goosedefi.gitbook.io/goose-finance/",
+      // },
       {
         label: "Blog",
-        href: "https://pancakeswap.medium.com",
+        href: "https://tea-swap.finance/",
       },
     ],
   },
@@ -141,67 +132,41 @@ export const links = [
 
 export const socials = [
   {
+    label: "Medium",
+    icon: "MediumIcon",
+    href: "https://teaswap-finance.medium.com/",
+  },
+  {
+    label: "Github",
+    icon: "GithubIcon",
+    href: "https://github.com/Tea-Swap",
+  },
+  {
     label: "Telegram",
     icon: "TelegramIcon",
     items: [
       {
         label: "English",
-        href: "https://t.me/pancakeswap",
+        href: "https://t.me/TeaswapFinance",
       },
-      {
-        label: "Bahasa Indonesia",
-        href: "https://t.me/PancakeSwapIndonesia",
-      },
-      {
-        label: "中文",
-        href: "https://t.me/PancakeSwap_CN",
-      },
-      {
-        label: "Tiếng Việt",
-        href: "https://t.me/PancakeSwapVN",
-      },
-      {
-        label: "Italiano",
-        href: "https://t.me/pancakeswap_ita",
-      },
-      {
-        label: "русский",
-        href: "https://t.me/pancakeswap_ru",
-      },
-      {
-        label: "Türkiye",
-        href: "https://t.me/pancakeswapturkiye",
-      },
-      {
-        label: "Português",
-        href: "https://t.me/PancakeSwapPortuguese",
-      },
-      {
-        label: "Español",
-        href: "https://t.me/PancakeswapEs",
-      },
-      {
-        label: "日本語",
-        href: "https://t.me/pancakeswapjp",
-      },
-      {
-        label: "Français",
-        href: "https://t.me/pancakeswapfr",
-      },
+      // {
+      //   label: "Français",
+      //   href: "https://t.me/goosefinancefrench",
+      // },
       {
         label: "Announcements",
-        href: "https://t.me/PancakeSwapAnn",
+        href: "https://t.me/joinchat/qx4uCbmNDfgwZmVk",
       },
-      {
-        label: "Whale Alert",
-        href: "https://t.me/PancakeSwapWhales",
-      },
+      // {
+      //   label: "Price Bot",
+      //   href: "https://t.me/BinanceRocketEGG",
+      // },
     ],
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/pancakeswap",
+    href: "https://twitter.com/SwapTea",
   },
 ];
 
