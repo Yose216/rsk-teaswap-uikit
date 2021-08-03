@@ -3423,7 +3423,7 @@ var Icon$t = function (props) {
 
 var Icon$s = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 90 90" }, props),
-        React__default['default'].createElement("image", { width: 90, height: 110, href: "/images/egg/mint.png" })));
+        React__default['default'].createElement("image", { width: 70, height: 90, href: "/images/egg/mint.png" })));
 };
 
 var Icon$r = function (props) {
@@ -3517,7 +3517,7 @@ var Icon$f = function (props) {
 
 var Icon$e = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 90 90" }, props),
-        React__default['default'].createElement("image", { width: 90, height: 110, href: "/images/egg/9.png" })));
+        React__default['default'].createElement("image", { width: 70, height: 90, href: "/images/egg/9.png" })));
 };
 
 var Icon$d = function (props) {
