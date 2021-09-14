@@ -3392,7 +3392,7 @@ var Icon$w = function (props) {
 var Logo$1 = function (_a) {
     _a.isDark; var props = __rest(_a, ["isDark"]);
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 160 26" }, props),
-        React__default['default'].createElement("image", { width: "205", height: "26", href: "/images/egg/LogoTextNewWhite.svg" })));
+        React__default['default'].createElement("image", { width: "405", height: "50", href: "/images/egg/LogoTextNewWhite.svg" })));
 };
 
 var Icon$v = function (props) {
