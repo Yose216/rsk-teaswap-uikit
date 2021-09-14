@@ -3363,7 +3363,7 @@ var Icon$y = function (props) {
 
 var Icon$x = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
-        React.createElement("image", { width: 90, height: 90, href: "/images/egg/ifo.svg" })));
+        React.createElement("image", { width: 60, height: 60, href: "/images/egg/ifo.svg" })));
 };
 
 var Icon$w = function (props) {
@@ -3424,7 +3424,7 @@ var Icon$o = function (props) {
 
 var Icon$n = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
-        React.createElement("image", { width: 90, height: 90, href: "/images/egg/vote.svg" })));
+        React.createElement("image", { width: 60, height: 60, href: "/images/egg/vote.svg" })));
 };
 
 var Icon$m = function (props) {
