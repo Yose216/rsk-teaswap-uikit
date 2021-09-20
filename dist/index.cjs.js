@@ -4234,6 +4234,19 @@ var UserBlock$1 = React__default['default'].memo(UserBlock, function (prevProps,
         prevProps.logout === nextProps.logout;
 });
 
+var ModalBlockChain = function (_a) {
+    var onDismiss = _a.onDismiss;
+    return (React__default['default'].createElement(Modal, { title: "Choose your blockchain", onDismiss: onDismiss },
+        React__default['default'].createElement(Button, { width: "100%", variant: "tertiary", onClick: function () { console.log('1'); }, style: { justifyContent: "space-between" }, mb: 10 },
+            React__default['default'].createElement(Text, { bold: true, color: "primary", mr: "16px" }, "Binance Smart Chain")),
+        React__default['default'].createElement(Button, { width: "100%", variant: "tertiary", onClick: function () { console.log('1'); }, style: { justifyContent: "space-between" }, mb: 10 },
+            React__default['default'].createElement(Text, { bold: true, color: "primary", mr: "16px" }, "Arbitrum")),
+        React__default['default'].createElement(Button, { width: "100%", variant: "tertiary", onClick: function () { console.log('1'); }, style: { justifyContent: "space-between" }, mb: 10 },
+            React__default['default'].createElement(Text, { bold: true, color: "primary", mr: "16px" }, "RSK")),
+        React__default['default'].createElement(Button, { width: "100%", variant: "tertiary", onClick: function () { console.log('1'); }, style: { justifyContent: "space-between" }, mb: 10 },
+            React__default['default'].createElement(Text, { bold: true, color: "primary", mr: "16px" }, "Polygon"))));
+};
+
 var StyledAvatar = styled__default['default'].div(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n  margin-left: 8px;\n  position: relative;\n\n  img {\n    border-radius: 50%;\n  }\n"], ["\n  margin-left: 8px;\n  position: relative;\n\n  img {\n    border-radius: 50%;\n  }\n"])));
 var Pip = styled__default['default'].div(templateObject_2$1 || (templateObject_2$1 = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 50%;\n  pointer-events: none;\n  height: 8px;\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: 8px;\n"], ["\n  background-color: ", ";\n  border-radius: 50%;\n  pointer-events: none;\n  height: 8px;\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: 8px;\n"])), function (_a) {
     var theme = _a.theme;
@@ -4321,9 +4334,12 @@ var Menu = function (_a) {
     }, []);
     // Find the home link if provided
     var homeLink = links.find(function (link) { return link.label === "Home"; });
+    var onPresentMyModal = useModal(React__default['default'].createElement(ModalBlockChain, null))[0];
     return (React__default['default'].createElement(Wrapper, null,
         React__default['default'].createElement(StyledNav, { showMenu: showMenu },
             React__default['default'].createElement(Logo, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
+            React__default['default'].createElement(Flex, null,
+                React__default['default'].createElement(Button, { onClick: onPresentMyModal, width: "100%" }, "Modal")),
             !!login && !!logout && (React__default['default'].createElement(Flex, null,
                 React__default['default'].createElement(UserBlock$1, { account: account, login: login, logout: logout }),
                 profile && React__default['default'].createElement(Avatar, { profile: profile })))),

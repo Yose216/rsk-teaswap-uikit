@@ -4,9 +4,12 @@ import throttle from "lodash/throttle";
 import Overlay from "../../components/Overlay/Overlay";
 import Flex from "../../components/Box/Flex";
 import { useMatchBreakpoints } from "../../hooks";
+import { useModal } from "../Modal";
+import Button from "../../components/Button/Button";
 import Logo from "./components/Logo";
 import Panel from "./components/Panel";
 import UserBlock from "./components/UserBlock";
+import ModalBlockChain from "./components/ModalBlockChain";
 import { NavProps } from "./types";
 import Avatar from "./components/Avatar";
 import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
@@ -119,6 +122,8 @@ const Menu: React.FC<NavProps> = ({
 
   // Find the home link if provided
   const homeLink = links.find((link) => link.label === "Home");
+  const [onPresentMyModal] = useModal(<ModalBlockChain />)
+
 
   return (
     <Wrapper>
@@ -129,6 +134,11 @@ const Menu: React.FC<NavProps> = ({
           isDark={isDark}
           href={homeLink?.href ?? "/"}
         />
+        <Flex>
+          <Button onClick={onPresentMyModal} width="100%">
+            Modal
+          </Button>
+        </Flex>
         {!!login && !!logout && (
           <Flex>
             <UserBlock account={account} login={login} logout={logout} />

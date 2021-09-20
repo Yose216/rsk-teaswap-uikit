@@ -4220,6 +4220,19 @@ var UserBlock$1 = React.memo(UserBlock, function (prevProps, nextProps) {
         prevProps.logout === nextProps.logout;
 });
 
+var ModalBlockChain = function (_a) {
+    var onDismiss = _a.onDismiss;
+    return (React.createElement(Modal, { title: "Choose your blockchain", onDismiss: onDismiss },
+        React.createElement(Button, { width: "100%", variant: "tertiary", onClick: function () { console.log('1'); }, style: { justifyContent: "space-between" }, mb: 10 },
+            React.createElement(Text, { bold: true, color: "primary", mr: "16px" }, "Binance Smart Chain")),
+        React.createElement(Button, { width: "100%", variant: "tertiary", onClick: function () { console.log('1'); }, style: { justifyContent: "space-between" }, mb: 10 },
+            React.createElement(Text, { bold: true, color: "primary", mr: "16px" }, "Arbitrum")),
+        React.createElement(Button, { width: "100%", variant: "tertiary", onClick: function () { console.log('1'); }, style: { justifyContent: "space-between" }, mb: 10 },
+            React.createElement(Text, { bold: true, color: "primary", mr: "16px" }, "RSK")),
+        React.createElement(Button, { width: "100%", variant: "tertiary", onClick: function () { console.log('1'); }, style: { justifyContent: "space-between" }, mb: 10 },
+            React.createElement(Text, { bold: true, color: "primary", mr: "16px" }, "Polygon"))));
+};
+
 var StyledAvatar = styled.div(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n  margin-left: 8px;\n  position: relative;\n\n  img {\n    border-radius: 50%;\n  }\n"], ["\n  margin-left: 8px;\n  position: relative;\n\n  img {\n    border-radius: 50%;\n  }\n"])));
 var Pip = styled.div(templateObject_2$1 || (templateObject_2$1 = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 50%;\n  pointer-events: none;\n  height: 8px;\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: 8px;\n"], ["\n  background-color: ", ";\n  border-radius: 50%;\n  pointer-events: none;\n  height: 8px;\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: 8px;\n"])), function (_a) {
     var theme = _a.theme;
@@ -4307,9 +4320,12 @@ var Menu = function (_a) {
     }, []);
     // Find the home link if provided
     var homeLink = links.find(function (link) { return link.label === "Home"; });
+    var onPresentMyModal = useModal(React.createElement(ModalBlockChain, null))[0];
     return (React.createElement(Wrapper, null,
         React.createElement(StyledNav, { showMenu: showMenu },
             React.createElement(Logo, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
+            React.createElement(Flex, null,
+                React.createElement(Button, { onClick: onPresentMyModal, width: "100%" }, "Modal")),
             !!login && !!logout && (React.createElement(Flex, null,
                 React.createElement(UserBlock$1, { account: account, login: login, logout: logout }),
                 profile && React.createElement(Avatar, { profile: profile })))),
