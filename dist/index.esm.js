@@ -3607,7 +3607,7 @@ var Logo = function (_a) {
         React.createElement(Logo$2, { className: "mobile-icon" }),
         React.createElement(Logo$1, { className: "desktop-icon", isDark: isDark })));
     return (React.createElement(Flex, null,
-        React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React.createElement(Icon$z, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$A, { width: "24px", color: "textSubtle" }))),
+        React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "5px" }, isPushed ? (React.createElement(Icon$z, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$A, { width: "24px", color: "textSubtle" }))),
         isPushed ? (isAbsoluteUrl ? (React.createElement(StyledLink, { as: "a", href: href, "aria-label": "Teaswap home page" }, innerLogo)) : (React.createElement(StyledLink, { to: href, "aria-label": "Teaswap home page" }, innerLogo))) : null));
 };
 var templateObject_1$c;
