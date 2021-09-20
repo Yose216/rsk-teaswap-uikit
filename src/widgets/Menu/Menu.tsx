@@ -13,6 +13,7 @@ import ModalBlockChain from "./components/ModalBlockChain";
 import { NavProps } from "./types";
 import Avatar from "./components/Avatar";
 import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
+import { BSCIcon } from "./icons";
 
 const Wrapper = styled.div`
   position: relative;
@@ -66,6 +67,10 @@ const MobileOnlyOverlay = styled(Overlay)`
   ${({ theme }) => theme.mediaQueries.nav} {
     display: none;
   }
+`;
+
+const BtnBlockChain = styled(Button)`
+  margin-right: 10px;
 `;
 
 const Menu: React.FC<NavProps> = ({
@@ -136,9 +141,10 @@ const Menu: React.FC<NavProps> = ({
         />
         {!!login && !!logout && (
           <Flex>
-            <Button onClick={onPresentMyModal} scale="sm" variant="tertiary">
-              Modal
-            </Button>
+            <BtnBlockChain onClick={onPresentMyModal} scale="sm">
+              <BSCIcon width="24px" />
+                BSC
+            </BtnBlockChain>
             <UserBlock account={account} login={login} logout={logout} />
             {profile && <Avatar profile={profile} />}
           </Flex>
