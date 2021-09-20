@@ -197,9 +197,9 @@ var styleVariants$2 = (_b$3 = {},
     _b$3[variants$5.SECONDARY] = {
         backgroundColor: "transparent",
         border: "2px solid",
-        borderColor: "primary",
+        borderColor: "link",
         boxShadow: "none",
-        color: "primary",
+        color: "link",
         ":disabled": {
             backgroundColor: "transparent",
         },
@@ -223,7 +223,7 @@ var styleVariants$2 = (_b$3 = {},
     },
     _b$3[variants$5.TEXT] = {
         backgroundColor: "transparent",
-        color: "primary",
+        color: "link",
         boxShadow: "none",
     },
     _b$3);
@@ -1699,7 +1699,7 @@ var LinkExternal = function (_a) {
     var children = _a.children, props = __rest(_a, ["children"]);
     return (React__default['default'].createElement(Link, __assign({ external: true }, props),
         children,
-        React__default['default'].createElement(Icon$1b, { color: "primary", ml: "4px" })));
+        React__default['default'].createElement(Icon$1b, { color: "link", ml: "4px" })));
 };
 
 var variants$2 = {
