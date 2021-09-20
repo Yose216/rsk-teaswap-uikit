@@ -11,6 +11,7 @@ export declare const baseColors: {
     blue: string;
     red: string;
     grey: string;
+    link: string;
 };
 export declare const additionalColors: {
     binance: string;

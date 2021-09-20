@@ -11,7 +11,8 @@ export const baseColors = {
   yellow: "#FFFF00",
   blue: "#0000FF",
   red: "#FF0000",
-  grey: "#808080"
+  grey: "#808080",
+  link: "#008e46"
 };
 
 export const additionalColors = {

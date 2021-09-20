@@ -2904,7 +2904,8 @@ var baseColors = {
     yellow: "#FFFF00",
     blue: "#0000FF",
     red: "#FF0000",
-    grey: "#808080"
+    grey: "#808080",
+    link: "#008e46"
 };
 var additionalColors = {
     binance: "#F0B90B",
