@@ -191,7 +191,7 @@ var scaleVariants$1 = (_a$5 = {},
     _a$5);
 var styleVariants$2 = (_b$3 = {},
     _b$3[variants$5.PRIMARY] = {
-        backgroundColor: "primary",
+        backgroundColor: "link",
         color: "white",
     },
     _b$3[variants$5.SECONDARY] = {
