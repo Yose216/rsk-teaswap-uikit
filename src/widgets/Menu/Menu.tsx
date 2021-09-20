@@ -134,13 +134,11 @@ const Menu: React.FC<NavProps> = ({
           isDark={isDark}
           href={homeLink?.href ?? "/"}
         />
-        <Flex>
-          <Button onClick={onPresentMyModal} width="100%">
-            Modal
-          </Button>
-        </Flex>
         {!!login && !!logout && (
           <Flex>
+            <Button onClick={onPresentMyModal} scale="sm" variant="tertiary">
+              Modal
+            </Button>
             <UserBlock account={account} login={login} logout={logout} />
             {profile && <Avatar profile={profile} />}
           </Flex>
