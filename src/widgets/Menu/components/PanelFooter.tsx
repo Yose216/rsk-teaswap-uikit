@@ -83,7 +83,7 @@ const PanelFooter: React.FC<Props> = ({
                 {cakePriceUsd ? (
                     <PriceLink href={priceLink} target="_blank">
                         <PancakeRoundIcon width="22px" mr="4px"/>
-                        <Text color="textSubtle" mr="4px" bold>{`$${cakePriceUsd.toFixed(2)}`}</Text>
+                        <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(2)}`}</Text>
                     </PriceLink>
                 ) : (
                     <Skeleton width={80} height={24}/>
@@ -91,7 +91,7 @@ const PanelFooter: React.FC<Props> = ({
                 {mintPriceUsd ? (
                     <PriceLink href={priceLink} target="_blank">
                         <PancakeRoundIcon2 width="22px" mr="4px"/>
-                        <Text color="textSubtle" mr="4px" bold>{`$${mintPriceUsd.toFixed(2)}`}</Text>
+                        <Text color="textSubtle" bold>{`$${mintPriceUsd.toFixed(2)}`}</Text>
                     </PriceLink>
                 ) : (
                     <Skeleton width={80} height={24}/>
@@ -99,7 +99,7 @@ const PanelFooter: React.FC<Props> = ({
                 {teasportPriceUsd ? (
                     <PriceLink href={priceLink} target="_blank">
                         <PancakeRoundIcon3 width="22px" mr="4px"/>
-                        <Text color="textSubtle" mr="4px" bold>{`$${teasportPriceUsd.toFixed(2)}`}</Text>
+                        <Text color="textSubtle" bold>{`$${teasportPriceUsd.toFixed(2)}`}</Text>
                     </PriceLink>
                 ) : (
                     <Skeleton width={80} height={24}/>
