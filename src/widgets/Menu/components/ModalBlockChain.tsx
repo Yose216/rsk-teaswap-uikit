@@ -1,6 +1,7 @@
 import React, { useCallback } from 'react'
 import Button from "../../../components/Button/Button";
 import Text from "../../../components/Text/Text";
+import { BSCIcon } from "../icons";
 import { Modal } from "../../Modal";
 
 
@@ -18,6 +19,7 @@ const ModalBlockChain: React.FC<ModalBlockChainProps> = ({ onDismiss }) => {
         style={{ justifyContent: "space-between" }}
         mb={10}
       >
+        <BSCIcon width="24px" />
         <Text bold color="primary" mr="16px">
           Binance Smart Chain
         </Text>
