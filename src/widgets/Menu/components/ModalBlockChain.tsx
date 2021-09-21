@@ -15,14 +15,14 @@ const ModalBlockChain: React.FC<ModalBlockChainProps> = ({ onDismiss }) => {
       <Button
         width="100%"
         variant="tertiary"
-        onClick={() => {console.log('1')}}
+        onClick={() => {window.location.href='https://app.tea-swap.finance/'}}
         style={{ justifyContent: "space-between" }}
         mb={10}
       >
         <Text bold color="primary" mr="16px">
           Binance Smart Chain
         </Text>
-        <BSCIcon width="24px" height="24px" />
+        <BSCIcon width="32px" height="32px" />
 
       </Button>
 
