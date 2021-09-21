@@ -4288,7 +4288,7 @@ var ModalBlockChain = function (_a) {
     var onDismiss = _a.onDismiss;
     return (React__default['default'].createElement(Modal, { title: "Choose your blockchain", onDismiss: onDismiss },
         React__default['default'].createElement(Button, { width: "100%", variant: "tertiary", onClick: function () { console.log('1'); }, style: { justifyContent: "space-between" }, mb: 10 },
-            React__default['default'].createElement(Icon$7, { width: "24px" }),
+            React__default['default'].createElement(Icon$7, { width: "24px", height: "24px" }),
             React__default['default'].createElement(Text, { bold: true, color: "primary", mr: "16px" }, "Binance Smart Chain")),
         React__default['default'].createElement(Button, { width: "100%", variant: "tertiary", onClick: function () { console.log('1'); }, style: { justifyContent: "space-between" }, mb: 10 },
             React__default['default'].createElement(Text, { bold: true, color: "primary", mr: "16px" }, "Arbitrum")),
