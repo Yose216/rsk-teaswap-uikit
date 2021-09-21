@@ -19,10 +19,11 @@ const ModalBlockChain: React.FC<ModalBlockChainProps> = ({ onDismiss }) => {
         style={{ justifyContent: "space-between" }}
         mb={10}
       >
-        <BSCIcon width="24px" height="24px" />
         <Text bold color="primary" mr="16px">
           Binance Smart Chain
         </Text>
+        <BSCIcon width="24px" height="24px" />
+
       </Button>
 
       <Button
