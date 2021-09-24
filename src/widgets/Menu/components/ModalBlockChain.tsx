@@ -34,7 +34,7 @@ const ModalBlockChain: React.FC<ModalBlockChainProps> = ({ onDismiss }) => {
         mb={10}
       >
         <Text bold color="primary" mr="16px">
-          Arbitrum
+          Arbitrum (soon)
         </Text>
       </Button>
       <Button
@@ -45,7 +45,7 @@ const ModalBlockChain: React.FC<ModalBlockChainProps> = ({ onDismiss }) => {
         mb={10}
       >
         <Text bold color="primary" mr="16px">
-          RSK
+          RSK (soon)
         </Text>
       </Button>
       <Button
@@ -56,7 +56,7 @@ const ModalBlockChain: React.FC<ModalBlockChainProps> = ({ onDismiss }) => {
         mb={10}
       >
         <Text bold color="primary" mr="16px">
-          Polygon
+          Polygon (soon)
         </Text>
       </Button>
     </Modal>

@@ -4291,11 +4291,11 @@ var ModalBlockChain = function (_a) {
             React__default['default'].createElement(Text, { bold: true, color: "primary", mr: "16px" }, "Binance Smart Chain"),
             React__default['default'].createElement(Icon$7, { width: "32px", height: "32px" })),
         React__default['default'].createElement(Button, { width: "100%", variant: "tertiary", onClick: function () { console.log('1'); }, style: { justifyContent: "space-between" }, mb: 10 },
-            React__default['default'].createElement(Text, { bold: true, color: "primary", mr: "16px" }, "Arbitrum")),
+            React__default['default'].createElement(Text, { bold: true, color: "primary", mr: "16px" }, "Arbitrum (soon)")),
         React__default['default'].createElement(Button, { width: "100%", variant: "tertiary", onClick: function () { console.log('1'); }, style: { justifyContent: "space-between" }, mb: 10 },
-            React__default['default'].createElement(Text, { bold: true, color: "primary", mr: "16px" }, "RSK")),
+            React__default['default'].createElement(Text, { bold: true, color: "primary", mr: "16px" }, "RSK (soon)")),
         React__default['default'].createElement(Button, { width: "100%", variant: "tertiary", onClick: function () { console.log('1'); }, style: { justifyContent: "space-between" }, mb: 10 },
-            React__default['default'].createElement(Text, { bold: true, color: "primary", mr: "16px" }, "Polygon"))));
+            React__default['default'].createElement(Text, { bold: true, color: "primary", mr: "16px" }, "Polygon (soon)"))));
 };
 
 var StyledAvatar = styled__default['default'].div(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n  margin-left: 8px;\n  position: relative;\n\n  img {\n    border-radius: 50%;\n  }\n"], ["\n  margin-left: 8px;\n  position: relative;\n\n  img {\n    border-radius: 50%;\n  }\n"])));
