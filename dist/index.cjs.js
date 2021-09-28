@@ -2909,11 +2909,11 @@ var useKonamiCheatCode = function (matchedCodeHandler) {
 
 var baseColors = {
     failure: "#ED4B9E",
-    primary: "#008E46",
-    primaryBright: "#008E46",
-    primaryDark: "#008E46",
-    secondary: "#008E46",
-    success: "#008E46",
+    primary: "#546a2a",
+    primaryBright: "#546a2a",
+    primaryDark: "#546a2a",
+    secondary: "#6D8442",
+    success: "#546a2a",
     warning: "#FFB237",
     yellow: "#FFFF00",
     blue: "#0000FF",
@@ -2925,7 +2925,7 @@ var additionalColors = {
     binance: "#F0B90B",
     overlay: "#d3f7e4",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), additionalColors), { background: "#d3f7e4", backgroundDisabled: "#E9EAEB", backgroundAlt: "#FFFFFF", cardBorder: "#E7E3EB", contrast: "#191326", dropdown: "#F6F6F6", dropdownDeep: "#EEEEEE", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#280D5F", borderColor: "#E9EAEB", textDisabled: "#BDC2C4", textSubtle: "#008E46", disabled: "#E9EAEB", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), additionalColors), { background: "#d3f7e4", backgroundDisabled: "#E9EAEB", backgroundAlt: "#FFFFFF", cardBorder: "#E7E3EB", contrast: "#191326", dropdown: "#F6F6F6", dropdownDeep: "#EEEEEE", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#546a2a", borderColor: "#E9EAEB", textDisabled: "#BDC2C4", textSubtle: "#546a2a", disabled: "#E9EAEB", gradients: {
         bubblegum: "linear-gradient(100deg,#A7D1A9 0%,#6F9E8C 100%)",
         inverseBubblegum: "linear-gradient(100deg, #6F9E8C 0%, #A7D1A9 100%)",
         cardHeader: "linear-gradient(111.68deg, #F2ECF2 0%, #E8F2F6 100%)",
@@ -2934,7 +2934,7 @@ var lightColors = __assign(__assign(__assign({}, baseColors), additionalColors),
         violetAlt: "linear-gradient(180deg, #CBD7EF 0%, #9A9FD0 100%)",
         gold: "linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), additionalColors), { secondary: "#9A6AFF", background: "#08060B", backgroundDisabled: "#3c3742", backgroundAlt: "#27262c", cardBorder: "#383241", contrast: "#FFFFFF", borderColor: "#524B63", dropdown: "#1E1D20", dropdownDeep: "#100C18", invertedContrast: "#191326", input: "#372F47", inputSecondary: "#262130", primaryDark: "#0098A1", tertiary: "#353547", text: "#F4EEFF", textDisabled: "#666171", textSubtle: "#B8ADD2", disabled: "#524B63", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), additionalColors), { secondary: "#6D8442", background: "#0f190e", backgroundDisabled: "#3c3742", backgroundAlt: "#08060B", cardBorder: "#383241", contrast: "#FFFFFF", borderColor: "#524B63", dropdown: "#1E1D20", dropdownDeep: "#100C18", invertedContrast: "#191326", input: "#372F47", inputSecondary: "#262130", primaryDark: "#0098A1", tertiary: "#0f190e", text: "#8BB837", textDisabled: "#666171", textSubtle: "#8BB837", disabled: "#524B63", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
         inverseBubblegum: "linear-gradient(139.73deg, #3D2A54 0%, #313D5C 100%)",
         cardHeader: "linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)",
@@ -3973,23 +3973,16 @@ var PriceLink = styled__default['default'].a(templateObject_2$3 || (templateObje
 var SettingsEntry = styled__default['default'].div(templateObject_3$1 || (templateObject_3$1 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
 var SocialEntry = styled__default['default'].div(templateObject_4$1 || (templateObject_4$1 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
 var PanelFooter = function (_a) {
-    var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd, mintPriceUsd = _a.mintPriceUsd, teasportPriceUsd = _a.teasportPriceUsd, currentLang = _a.currentLang, langs = _a.langs, setLang = _a.setLang, priceLink = _a.priceLink;
+    var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd; _a.mintPriceUsd; _a.teasportPriceUsd; var currentLang = _a.currentLang, langs = _a.langs, setLang = _a.setLang, priceLink = _a.priceLink;
     if (!isPushed) {
         return (React__default['default'].createElement(Container, null,
             React__default['default'].createElement(IconButton, { variant: "text", onClick: function () { return pushNav(true); } },
                 React__default['default'].createElement(Icon$1v, null))));
     }
     return (React__default['default'].createElement(Container, null,
-        React__default['default'].createElement(SocialEntry, null,
-            cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
-                React__default['default'].createElement(Icon$1a, { width: "22px", mr: "4px" }),
-                React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(2)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
-            mintPriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
-                React__default['default'].createElement(Icon$19, { width: "22px", mr: "4px" }),
-                React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + mintPriceUsd.toFixed(2)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
-            teasportPriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
-                React__default['default'].createElement(Icon$18, { width: "22px", mr: "4px" }),
-                React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + teasportPriceUsd.toFixed(2)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }))),
+        React__default['default'].createElement(SocialEntry, null, cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
+            React__default['default'].createElement(Icon$1a, { width: "22px", mr: "4px" }),
+            React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(2)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }))),
         React__default['default'].createElement(SocialEntry, null,
             React__default['default'].createElement(Flex, null, socials.map(function (social, index) {
                 var Icon = Icons[social.icon];
