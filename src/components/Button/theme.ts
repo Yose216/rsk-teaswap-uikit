@@ -18,15 +18,15 @@ export const scaleVariants = {
 
 export const styleVariants = {
   [variants.PRIMARY]: {
-    backgroundColor: "primary",
+    backgroundColor: "link",
     color: "white",
   },
   [variants.SECONDARY]: {
     backgroundColor: "transparent",
     border: "2px solid",
-    borderColor: "primary",
+    borderColor: "link",
     boxShadow: "none",
-    color: "primary",
+    color: "link",
     ":disabled": {
       backgroundColor: "transparent",
     },
@@ -50,7 +50,7 @@ export const styleVariants = {
   },
   [variants.TEXT]: {
     backgroundColor: "transparent",
-    color: "primary",
+    color: "link",
     boxShadow: "none",
   },
 };

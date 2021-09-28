@@ -1,14 +1,14 @@
 {
   "name": "@pancakeswap-libs/",
   "version": "0.11.0",
-  "description": "Set of UI components for pancake projects",
+  "description": "Set of UI components for teaswap rsk projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/Tea-Swap/teaswap-uikit",
+  "repository": "https://github.com/Yose216/rsk-teaswap-uikit",
   "license": "MIT",
   "scripts": {
     "build": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",

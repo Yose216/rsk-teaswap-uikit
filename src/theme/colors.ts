@@ -11,18 +11,19 @@ export const baseColors = {
   yellow: "#FFFF00",
   blue: "#0000FF",
   red: "#FF0000",
-  grey: "#808080"
+  grey: "#808080",
+  link: "#008e46"
 };
 
 export const additionalColors = {
   binance: "#F0B90B",
-  overlay: "#452a7a",
+  overlay: "#d3f7e4",
 };
 
 export const lightColors: Colors = {
   ...baseColors,
   ...additionalColors,
-  background: "#FAF9FA",
+  background: "#d3f7e4",
   backgroundDisabled: "#E9EAEB",
   backgroundAlt: "#FFFFFF",
   cardBorder: "#E7E3EB",
@@ -39,8 +40,8 @@ export const lightColors: Colors = {
   textSubtle: "#008E46",
   disabled: "#E9EAEB",
   gradients: {
-    bubblegum: "linear-gradient(139.73deg, #E5FDFF 0%, #F3EFFF 100%)",
-    inverseBubblegum: "linear-gradient(139.73deg, #F3EFFF 0%, #E5FDFF 100%)",
+    bubblegum: "linear-gradient(100deg,#A7D1A9 0%,#6F9E8C 100%)",
+    inverseBubblegum: "linear-gradient(100deg, #6F9E8C 0%, #A7D1A9 100%)",
     cardHeader: "linear-gradient(111.68deg, #F2ECF2 0%, #E8F2F6 100%)",
     blue: "linear-gradient(180deg, #A7E8F1 0%, #94E1F2 100%)",
     violet: "linear-gradient(180deg, #E2C9FB 0%, #CDB8FA 100%)",

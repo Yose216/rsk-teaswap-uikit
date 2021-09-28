@@ -35,3 +35,4 @@ export { default as ListingsIcon } from "./Listings";
 export { default as LiquidityIcon } from "./Liquidity";
 export { default as GraphIcon } from "./Graph";
 export { default as VaultsIcon} from "./Vaults";
+export { default as BSCIcon} from "./BSC";

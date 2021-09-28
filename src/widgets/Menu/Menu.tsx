@@ -4,12 +4,16 @@ import throttle from "lodash/throttle";
 import Overlay from "../../components/Overlay/Overlay";
 import Flex from "../../components/Box/Flex";
 import { useMatchBreakpoints } from "../../hooks";
+import { useModal } from "../Modal";
+import Button from "../../components/Button/Button";
 import Logo from "./components/Logo";
 import Panel from "./components/Panel";
 import UserBlock from "./components/UserBlock";
+import ModalBlockChain from "./components/ModalBlockChain";
 import { NavProps } from "./types";
 import Avatar from "./components/Avatar";
 import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
+import { BSCIcon } from "./icons";
 
 const Wrapper = styled.div`
   position: relative;
@@ -29,9 +33,9 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   width: 100%;
   height: ${MENU_HEIGHT}px;
   background-color: ${({ theme }) => theme.nav.background};
-  border-bottom: solid 2px rgba(133, 133, 133, 0.1);
   z-index: 20;
   transform: translate3d(0, 0, 0);
+
 `;
 
 const BodyWrapper = styled.div`
@@ -45,10 +49,12 @@ const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   transition: margin-top 0.2s, margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate3d(0, 0, 0);
   max-width: 100%;
+  overflow: hidden;
 
   ${({ theme }) => theme.mediaQueries.nav} {
     margin-left: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
     max-width: ${({ isPushed }) => `calc(100% - ${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px)`};
+    overflow: hidden;
   }
 `;
 
@@ -59,6 +65,10 @@ const MobileOnlyOverlay = styled(Overlay)`
   ${({ theme }) => theme.mediaQueries.nav} {
     display: none;
   }
+`;
+
+const BtnBlockChain = styled(Button)`
+  margin-right: 10px;
 `;
 
 const Menu: React.FC<NavProps> = ({
@@ -115,6 +125,8 @@ const Menu: React.FC<NavProps> = ({
 
   // Find the home link if provided
   const homeLink = links.find((link) => link.label === "Home");
+  const [onPresentMyModal] = useModal(<ModalBlockChain />)
+
 
   return (
     <Wrapper>
@@ -127,6 +139,10 @@ const Menu: React.FC<NavProps> = ({
         />
         {!!login && !!logout && (
           <Flex>
+            <BtnBlockChain onClick={onPresentMyModal} scale="sm">
+              <BSCIcon width="24px" />
+                BSC
+            </BtnBlockChain>
             <UserBlock account={account} login={login} logout={logout} />
             {profile && <Avatar profile={profile} />}
           </Flex>
