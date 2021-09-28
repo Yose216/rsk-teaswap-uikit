@@ -25,6 +25,17 @@ const ModalBlockChain: React.FC<ModalBlockChainProps> = ({ onDismiss }) => {
         <BSCIcon width="32px" height="32px" />
 
       </Button>
+      <Button
+        width="100%"
+        variant="tertiary"
+        onClick={() => {console.log('1')}}
+        style={{ justifyContent: "space-between" }}
+        mb={10}
+      >
+        <Text bold color="primary" mr="16px">
+          RSK
+        </Text>
+      </Button>
 
       <Button
         width="100%"
@@ -35,17 +46,6 @@ const ModalBlockChain: React.FC<ModalBlockChainProps> = ({ onDismiss }) => {
       >
         <Text bold color="primary" mr="16px">
           Arbitrum (soon)
-        </Text>
-      </Button>
-      <Button
-        width="100%"
-        variant="tertiary"
-        onClick={() => {console.log('1')}}
-        style={{ justifyContent: "space-between" }}
-        mb={10}
-      >
-        <Text bold color="primary" mr="16px">
-          RSK (soon)
         </Text>
       </Button>
       <Button

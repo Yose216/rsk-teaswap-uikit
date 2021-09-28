@@ -141,7 +141,7 @@ const Menu: React.FC<NavProps> = ({
           <Flex>
             <BtnBlockChain onClick={onPresentMyModal} scale="sm">
               <BSCIcon width="24px" />
-                BSC
+                RSK
             </BtnBlockChain>
             <UserBlock account={account} login={login} logout={logout} />
             {profile && <Avatar profile={profile} />}

@@ -3950,7 +3950,7 @@ var PanelBody = function (_a) {
 var templateObject_1$9;
 
 var Icons = IconModule;
-var MoonIcon = Icons.MoonIcon, SunIcon = Icons.SunIcon, LanguageIcon = Icons.LanguageIcon;
+var MoonIcon = Icons.MoonIcon, SunIcon = Icons.SunIcon; Icons.LanguageIcon;
 var Container = styled.div(templateObject_1$8 || (templateObject_1$8 = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"])), function (_a) {
     var theme = _a.theme;
     return theme.nav.background;
@@ -3959,7 +3959,7 @@ var PriceLink = styled.a(templateObject_2$3 || (templateObject_2$3 = __makeTempl
 var SettingsEntry = styled.div(templateObject_3$1 || (templateObject_3$1 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
 var SocialEntry = styled.div(templateObject_4$1 || (templateObject_4$1 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
 var PanelFooter = function (_a) {
-    var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd; _a.mintPriceUsd; _a.teasportPriceUsd; var currentLang = _a.currentLang, langs = _a.langs, setLang = _a.setLang, priceLink = _a.priceLink;
+    var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd; _a.mintPriceUsd; _a.teasportPriceUsd; _a.currentLang; _a.langs; _a.setLang; var priceLink = _a.priceLink;
     if (!isPushed) {
         return (React.createElement(Container, null,
             React.createElement(IconButton, { variant: "text", onClick: function () { return pushNav(true); } },
@@ -3985,11 +3985,7 @@ var PanelFooter = function (_a) {
                 React.createElement(Flex, { alignItems: "center" },
                     React.createElement(SunIcon, { color: isDark ? "textDisabled" : "text", width: "24px" }),
                     React.createElement(Text, { color: "textDisabled", mx: "4px" }, "/"),
-                    React.createElement(MoonIcon, { color: isDark ? "text" : "textDisabled", width: "24px" }))),
-            React.createElement(Dropdown, { position: "top-right", target: React.createElement(Button, { variant: "text", startIcon: React.createElement(LanguageIcon, { color: "textSubtle", width: "24px" }) },
-                    React.createElement(Text, { color: "textSubtle" }, currentLang === null || currentLang === void 0 ? void 0 : currentLang.toUpperCase())) }, langs.map(function (lang) { return (React.createElement(MenuButton, { key: lang.code, fullWidth: true, onClick: function () { return setLang(lang); }, 
-                // Safari fix
-                style: { minHeight: "32px", height: "auto" } }, lang.language)); })))));
+                    React.createElement(MoonIcon, { color: isDark ? "text" : "textDisabled", width: "24px" }))))));
 };
 var templateObject_1$8, templateObject_2$3, templateObject_3$1, templateObject_4$1;
 
@@ -4270,9 +4266,9 @@ var ModalBlockChain = function (_a) {
             React.createElement(Text, { bold: true, color: "primary", mr: "16px" }, "Binance Smart Chain"),
             React.createElement(Icon$7, { width: "32px", height: "32px" })),
         React.createElement(Button, { width: "100%", variant: "tertiary", onClick: function () { console.log('1'); }, style: { justifyContent: "space-between" }, mb: 10 },
-            React.createElement(Text, { bold: true, color: "primary", mr: "16px" }, "Arbitrum (soon)")),
+            React.createElement(Text, { bold: true, color: "primary", mr: "16px" }, "RSK")),
         React.createElement(Button, { width: "100%", variant: "tertiary", onClick: function () { console.log('1'); }, style: { justifyContent: "space-between" }, mb: 10 },
-            React.createElement(Text, { bold: true, color: "primary", mr: "16px" }, "RSK (soon)")),
+            React.createElement(Text, { bold: true, color: "primary", mr: "16px" }, "Arbitrum (soon)")),
         React.createElement(Button, { width: "100%", variant: "tertiary", onClick: function () { console.log('1'); }, style: { justifyContent: "space-between" }, mb: 10 },
             React.createElement(Text, { bold: true, color: "primary", mr: "16px" }, "Polygon (soon)"))));
 };
@@ -4372,7 +4368,7 @@ var Menu = function (_a) {
             !!login && !!logout && (React.createElement(Flex, null,
                 React.createElement(BtnBlockChain, { onClick: onPresentMyModal, scale: "sm" },
                     React.createElement(Icon$7, { width: "24px" }),
-                    "BSC"),
+                    "RSK"),
                 React.createElement(UserBlock$1, { account: account, login: login, logout: logout }),
                 profile && React.createElement(Avatar, { profile: profile })))),
         React.createElement(BodyWrapper, null,
