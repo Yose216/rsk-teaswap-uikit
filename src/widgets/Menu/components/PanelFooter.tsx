@@ -88,22 +88,6 @@ const PanelFooter: React.FC<Props> = ({
                 ) : (
                     <Skeleton width={80} height={24}/>
                 )}
-                {mintPriceUsd ? (
-                    <PriceLink href={priceLink} target="_blank">
-                        <PancakeRoundIcon2 width="22px" mr="4px"/>
-                        <Text color="textSubtle" bold>{`$${mintPriceUsd.toFixed(2)}`}</Text>
-                    </PriceLink>
-                ) : (
-                    <Skeleton width={80} height={24}/>
-                )}
-                {teasportPriceUsd ? (
-                    <PriceLink href={priceLink} target="_blank">
-                        <PancakeRoundIcon3 width="22px" mr="4px"/>
-                        <Text color="textSubtle" bold>{`$${teasportPriceUsd.toFixed(2)}`}</Text>
-                    </PriceLink>
-                ) : (
-                    <Skeleton width={80} height={24}/>
-                )}
             </SocialEntry>
             <SocialEntry>
                 <Flex>
