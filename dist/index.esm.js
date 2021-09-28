@@ -4265,11 +4265,11 @@ var ModalBlockChain = function (_a) {
         React.createElement(Button, { width: "100%", variant: "tertiary", onClick: function () { window.location.href = 'https://app.tea-swap.finance/'; }, style: { justifyContent: "space-between" }, mb: 10 },
             React.createElement(Text, { bold: true, color: "primary", mr: "16px" }, "Binance Smart Chain"),
             React.createElement(Icon$7, { width: "32px", height: "32px" })),
-        React.createElement(Button, { width: "100%", variant: "tertiary", onClick: function () { console.log('1'); }, style: { justifyContent: "space-between" }, mb: 10 },
+        React.createElement(Button, { width: "100%", variant: "tertiary", disabled: true, onClick: function () { console.log('1'); }, style: { justifyContent: "space-between" }, mb: 10 },
             React.createElement(Text, { bold: true, color: "primary", mr: "16px" }, "RSK")),
-        React.createElement(Button, { width: "100%", variant: "tertiary", onClick: function () { console.log('1'); }, style: { justifyContent: "space-between" }, mb: 10 },
+        React.createElement(Button, { width: "100%", variant: "tertiary", onClick: function () { console.log('1'); }, style: { justifyContent: "space-between" }, disabled: true, mb: 10 },
             React.createElement(Text, { bold: true, color: "primary", mr: "16px" }, "Arbitrum (soon)")),
-        React.createElement(Button, { width: "100%", variant: "tertiary", onClick: function () { console.log('1'); }, style: { justifyContent: "space-between" }, mb: 10 },
+        React.createElement(Button, { width: "100%", variant: "tertiary", onClick: function () { console.log('1'); }, style: { justifyContent: "space-between" }, disabled: true, mb: 10 },
             React.createElement(Text, { bold: true, color: "primary", mr: "16px" }, "Polygon (soon)"))));
 };
 

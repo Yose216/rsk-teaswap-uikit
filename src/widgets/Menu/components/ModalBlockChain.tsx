@@ -28,6 +28,7 @@ const ModalBlockChain: React.FC<ModalBlockChainProps> = ({ onDismiss }) => {
       <Button
         width="100%"
         variant="tertiary"
+        disabled={true}
         onClick={() => {console.log('1')}}
         style={{ justifyContent: "space-between" }}
         mb={10}
@@ -42,6 +43,7 @@ const ModalBlockChain: React.FC<ModalBlockChainProps> = ({ onDismiss }) => {
         variant="tertiary"
         onClick={() => {console.log('1')}}
         style={{ justifyContent: "space-between" }}
+        disabled={true}
         mb={10}
       >
         <Text bold color="primary" mr="16px">
@@ -53,6 +55,7 @@ const ModalBlockChain: React.FC<ModalBlockChainProps> = ({ onDismiss }) => {
         variant="tertiary"
         onClick={() => {console.log('1')}}
         style={{ justifyContent: "space-between" }}
+        disabled={true}
         mb={10}
       >
         <Text bold color="primary" mr="16px">
