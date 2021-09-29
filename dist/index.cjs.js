@@ -3973,16 +3973,23 @@ var PriceLink = styled__default['default'].a(templateObject_2$3 || (templateObje
 var SettingsEntry = styled__default['default'].div(templateObject_3$1 || (templateObject_3$1 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
 var SocialEntry = styled__default['default'].div(templateObject_4$1 || (templateObject_4$1 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
 var PanelFooter = function (_a) {
-    var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd; _a.mintPriceUsd; _a.teasportPriceUsd; _a.currentLang; _a.langs; _a.setLang; var priceLink = _a.priceLink;
+    var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd, mintPriceUsd = _a.mintPriceUsd, teasportPriceUsd = _a.teasportPriceUsd; _a.currentLang; _a.langs; _a.setLang; var priceLink = _a.priceLink;
     if (!isPushed) {
         return (React__default['default'].createElement(Container, null,
             React__default['default'].createElement(IconButton, { variant: "text", onClick: function () { return pushNav(true); } },
                 React__default['default'].createElement(Icon$1v, null))));
     }
     return (React__default['default'].createElement(Container, null,
-        React__default['default'].createElement(SocialEntry, null, cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
-            React__default['default'].createElement(Icon$1a, { width: "22px", mr: "4px" }),
-            React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(2)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }))),
+        React__default['default'].createElement(SocialEntry, null,
+            cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
+                React__default['default'].createElement(Icon$1a, { width: "22px", mr: "4px" }),
+                React__default['default'].createElement(Text, { color: "textSubtle", mr: "4px", bold: true }, "$" + cakePriceUsd.toFixed(2)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
+            mintPriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
+                React__default['default'].createElement(Icon$19, { width: "22px", mr: "4px" }),
+                React__default['default'].createElement(Text, { color: "textSubtle", mr: "4px", bold: true }, "$" + mintPriceUsd.toFixed(2)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
+            teasportPriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
+                React__default['default'].createElement(Icon$18, { width: "22px", mr: "4px" }),
+                React__default['default'].createElement(Text, { color: "textSubtle", mr: "4px", bold: true }, "$" + teasportPriceUsd.toFixed(2)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }))),
         React__default['default'].createElement(SocialEntry, null,
             React__default['default'].createElement(Flex, null, socials.map(function (social, index) {
                 var Icon = Icons[social.icon];
