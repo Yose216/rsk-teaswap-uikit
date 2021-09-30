@@ -4002,7 +4002,7 @@ var PanelFooter = function (_a) {
     return (React__default['default'].createElement(Container, null,
         React__default['default'].createElement(SocialEntry, null,
             cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
-                React__default['default'].createElement(Icon$1a, { width: "28px", mr: "4px" }),
+                React__default['default'].createElement(Icon$1a, { width: "22px", mr: "4px" }),
                 React__default['default'].createElement(Text, { color: "textSubtle", mr: "4px", bold: true }, "$" + cakePriceUsd.toFixed(2)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
             mintPriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
                 React__default['default'].createElement(Icon$19, { width: "22px", mr: "4px" }),

@@ -3988,7 +3988,7 @@ var PanelFooter = function (_a) {
     return (React.createElement(Container, null,
         React.createElement(SocialEntry, null,
             cakePriceUsd ? (React.createElement(PriceLink, { href: priceLink, target: "_blank" },
-                React.createElement(Icon$1a, { width: "28px", mr: "4px" }),
+                React.createElement(Icon$1a, { width: "22px", mr: "4px" }),
                 React.createElement(Text, { color: "textSubtle", mr: "4px", bold: true }, "$" + cakePriceUsd.toFixed(2)))) : (React.createElement(Skeleton, { width: 80, height: 24 })),
             mintPriceUsd ? (React.createElement(PriceLink, { href: priceLink, target: "_blank" },
                 React.createElement(Icon$19, { width: "22px", mr: "4px" }),
